@@ -16,7 +16,7 @@ Annotation (注解) 表示的是能够添加到Java源代码的语法元数据�
 #### 基础注解
    - @Documented：是否会保存到 Javadoc 文档中
    - @Retention：保留时间，可选值 SOURCE（源码时），CLASS（编译时），RUNTIME（运行时），默认为 CLASS，值为 SOURCE 大都为 Mark Annotation，这类 Annotation 大都用来校验，比如 Override, Deprecated, SuppressWarnings
-   - @Target：可以用来修饰哪些程序元素，如 TYPE, METHOD, CONSTRUCTOR, FIELD, PARAMETER 等，未标注则表示可修饰所有。
+   - @Target：可以用来修饰哪些程序元素，如 TYPE,METHOD, CONSTRUCTOR, FIELD,LOCAL_VARIABLE,PACKAGE, PARAMETER ，未标注则表示可修饰所有。
    - @Inherited： 是否可以被继承，默认为 false
 
 #### 自定义
@@ -50,3 +50,14 @@ public class App {
    (3). 可以加 default 表示默认值
 
 ### 第二章 Spring AOP
+
+
+### 引用
+[注解基本概念][1]
+[自定义注解][2]
+[注解解释器][3]
+
+
+  [1]: http://www.cnblogs.com/peida/archive/2013/04/23/3036035.html
+  [2]: http://www.cnblogs.com/peida/archive/2013/04/24/3036689.html
+  [3]: http://www.cnblogs.com/peida/archive/2013/04/26/3038503.html
